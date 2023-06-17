@@ -1,0 +1,4 @@
+execute at @p[distance=..50,tag=!goldplayTitle] run playsound minecraft:block.ender_chest.open voice @s ~ ~ ~ 5 0.7
+title @p[distance=..50,tag=!goldplayTitle] title [{"text":"     ","color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"text":"     ","color":"white","bold":false,"underlined":true}]
+tag @p[sort=nearest,distance=..50,tag=!goldplayTitle] add goldplayTitle
+tag @p[distance=50.001..50.2,tag=goldplayTitle] remove goldplayTitle
