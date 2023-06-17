@@ -4,4 +4,4 @@
 ### *Initially released as Hope's* **Dark Souls Titles**
 
 
-![Screenshot](https://i.imgur.com/tnR4nKW.jpg)
+![Screenshot](https://i.imgur.com/4XQVYgF.png)
