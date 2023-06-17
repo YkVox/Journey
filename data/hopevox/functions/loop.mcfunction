@@ -32,9 +32,4 @@ execute as @a at @e[tag=netheriteBlock] run function hopevox:titles/netherite
 execute as @e[tag=netheriteBlock] at @p[tag=netheriteplayTitle] unless entity @e[tag=netheriteBlock,distance=..200] run execute at @e[tag=netheriteBlock] run tag @p[distance=200.001..] remove netheriteplayTitle
 
 #DELETE MARKER + SOUND + RESET TAG D'ENTREE DANS ZONE
-execute as @a at @e[tag=hopeTitle,sort=nearest] unless block ~ ~ ~ #minecraft:signs run playsound minecraft:block.beacon.deactivate voice @a ~ ~ ~ 2 1.5
-execute as @a at @e[tag=hopeTitle,sort=nearest] unless block ~ ~ ~ #minecraft:signs run tag @a[tag=ironplayTitle] remove ironplayTitle
-execute as @a at @e[tag=hopeTitle,sort=nearest] unless block ~ ~ ~ #minecraft:signs run tag @a[tag=goldplayTitle] remove goldplayTitle
-execute as @a at @e[tag=hopeTitle,sort=nearest] unless block ~ ~ ~ #minecraft:signs run tag @a[tag=diamondplayTitle] remove diamondplayTitle
-execute as @a at @e[tag=hopeTitle,sort=nearest] unless block ~ ~ ~ #minecraft:signs run tag @a[tag=netheriteplayTitle] remove netheriteplayTitle
-execute as @a at @e[tag=hopeTitle,sort=nearest] unless block ~ ~ ~ #minecraft:signs run kill @e[tag=hopeTitle,sort=nearest,limit=1]
+execute as @a at @e[tag=hopeTitle,sort=nearest] unless block ~ ~ ~ #minecraft:signs run function hopevox:titles/title_delete
