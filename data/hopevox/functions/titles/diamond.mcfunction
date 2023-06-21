@@ -1,4 +1,4 @@
-execute at @p[distance=..100,tag=!diamondplayTitle] run playsound minecraft:block.ender_chest.open voice @s ~ ~ ~ 5 0.7
+execute at @p[distance=..100,tag=!diamondplayTitle] run function hopevox:sounds/diamond_sound
 title @p[distance=..100,tag=!diamondplayTitle] title [{"text":"     ","color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"text":"     ","color":"white","bold":false,"underlined":true}]
 tag @p[sort=nearest,distance=..100,tag=!diamondplayTitle] add diamondplayTitle
 tag @p[distance=100.001..100.2,tag=diamondplayTitle] remove diamondplayTitle

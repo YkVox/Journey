@@ -1,4 +1,4 @@
-execute at @p[distance=..200,tag=!netheriteplayTitle] run playsound minecraft:block.ender_chest.open voice @s ~ ~ ~ 5 0.7
+execute at @p[distance=..200,tag=!netheriteplayTitle] run function hopevox:sounds/netherite_sound
 title @p[distance=..200,tag=!netheriteplayTitle] title [{"text":"     ","color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"text":"     ","color":"white","bold":false,"underlined":true}]
 tag @p[sort=nearest,distance=..200,tag=!netheriteplayTitle] add netheriteplayTitle
 tag @p[distance=200.001..200.2,tag=netheriteplayTitle] remove netheriteplayTitle
