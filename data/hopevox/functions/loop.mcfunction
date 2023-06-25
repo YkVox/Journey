@@ -1,14 +1,14 @@
 ##		IRON
-execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:iron_block",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=ironBlock,sort=nearest,limit=1,distance=..5] run function hopevox:items/iron
+execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:iron_ingot",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=ironBlock,sort=nearest,limit=1,distance=..5] run function hopevox:items/iron
 
 ##		GOLD
-execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:gold_block",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=hopeTitle,sort=nearest,limit=1,distance=..5] run function hopevox:items/gold
+execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:gold_ingot",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=hopeTitle,sort=nearest,limit=1,distance=..5] run function hopevox:items/gold
 
 ##		DIAMOND
-execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:diamond_block",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=hopeTitle,sort=nearest,limit=1,distance=..5] run function hopevox:items/diamond
+execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:diamond",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=hopeTitle,sort=nearest,limit=1,distance=..5] run function hopevox:items/diamond
 
 ##		NETHERITE 
-execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:netherite_block",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=hopeTitle,sort=nearest,limit=1,distance=..5] run function hopevox:items/netherite
+execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:netherite_ingot",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=hopeTitle,sort=nearest,limit=1,distance=..5] run function hopevox:items/netherite
 
 #TAG POUR PAS DELETE BLOC EN TROP
 execute as @a at @e[tag=hopeTitle,sort=nearest,limit=1] run tag @e[tag=hopeTitle,sort=nearest,limit=1] add inPlace

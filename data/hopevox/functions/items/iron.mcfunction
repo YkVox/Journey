@@ -10,4 +10,4 @@ data merge block ~ ~ ~ {GlowingText:1b}
 summon marker ~ ~ ~ {Tags:["hopeTitle","ironBlock"]}
 
 #DELETE ITEM
-execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:iron_block",Count:1b}}] if entity @e[tag=hopeTitle,sort=nearest,limit=1,distance=..5] unless entity @e[tag=inPlace,sort=nearest,limit=1,distance=..5] run kill @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:iron_block",Count:1b}}]
+execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:iron_ingot",Count:1b}}] if entity @e[tag=hopeTitle,sort=nearest,limit=1,distance=..5] unless entity @e[tag=inPlace,sort=nearest,limit=1,distance=..5] run kill @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:iron_ingot",Count:1b}}]
