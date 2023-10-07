@@ -1,4 +1,14 @@
 
+
+title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"text":"     ","color":"white","bold":false,"underlined":true}]
+execute as @p[tag=!titled,sort=nearest,limit=1] run playsound minecraft:entity.evoker.prepare_summon ambient @s ^ ^ ^15 5 1.17
+scoreboard players set @p[tag=!titled,sort=nearest,limit=1] title_timer 1200
+tag @p[tag=!titled,sort=nearest,limit=1] add titled
+
+
+
+
+
 #	TITLE (PINGU)
 #IRON 25
 #title montré à tous ceux qui sont dans la dist min et qui n'ont pas encore eu le title
@@ -8,6 +18,3 @@
 #remove tag si en dehors de la zone
 #execute as @a[tag=playTitle] at @e[tag=ironBlock,sort=nearest] run tag @a[distance=26..,limit=1,sort=nearest] remove playTitle
 
-execute as @s run function hopevox:sounds/iron_sound
-title @s title [{"text":"     ","color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"text":"     ","color":"white","bold":false,"underlined":true}]
-tag @s add titled

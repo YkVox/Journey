@@ -3,7 +3,7 @@
 ##		IRON
 execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:iron_ingot",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=ironBlock,sort=nearest,limit=1,distance=..5] run function hopevox:items/iron
 #   Reset received title
-scoreboard players set @a receivedTitle 0
+#scoreboard players set @a receivedTitle 0
 
 ##		GOLD
 execute as @a at @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:gold_ingot",Count:1b}}] if block ~ ~ ~ #signs unless entity @e[tag=hopeTitle,sort=nearest,limit=1,distance=..5] run function hopevox:items/gold
@@ -19,10 +19,23 @@ execute as @a at @e[tag=hopeTitle,sort=nearest,limit=1] run tag @e[tag=hopeTitle
 
 ##		TITLE:PINGU
 #IRON 25
-execute at @e[tag=ironBlock] as @a[distance=..25,tag=!titled] run function hopevox:titles/iron
-execute at @e[tag=ironBlock] as @a[distance=30..,tag=titled] run tag @s remove titled
-execute as @e[tag=ironBlock] as @a[distance=30..] run say yes
-#execute at @e[tag=ironBlock] as @a[distance=26..,tag=titled] run scoreboard players add @s title_timer 1
+execute as @a[tag=!titled,scores={title_timer=0}] at @s if entity @e[tag=ironBlock,distance=..25,sort=nearest,limit=1] run execute as @e[tag=ironBlock,distance=..25,sort=nearest,limit=1] at @s run function hopevox:titles/iron
+execute as @a[scores={title_timer=1..}] at @s run scoreboard players remove @s title_timer 1
+execute as @a[scores={title_timer=0}] at @s run tag @s remove titled
+
+
+
+
+
+
+
+
+
+
+
+#execute at @e[tag=ironBlock] as @a[distance=..25,tag=!titled] run function hopevox:titles/iron
+#execute at @e[tag=ironBlock] as @a[distance=30..,tag=titled] run tag @s remove titled
+
 #execute as @a[tag=titled] run execute if score @s title_timer matches 20 run tag @s remove titled
 #execute as @a[tag=!titled] run scoreboard players set @s title_timer 0
 
