@@ -98,4 +98,3 @@ execute if score @s sign_id matches 97 run execute if score @p[tag=!titled,sort=
 execute if score @s sign_id matches 98 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t98 matches ..0 run function hopevox:titles/title_color
 execute if score @s sign_id matches 99 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t99 matches ..0 run function hopevox:titles/title_color
 execute if score @s sign_id matches 100 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t100 matches ..0 run function hopevox:titles/title_color
-#say ok id

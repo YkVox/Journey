@@ -34,6 +34,10 @@ execute if data block ~ ~ ~ {front_text:{color:"purple"}} run playsound transpos
 execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run playsound transposia:journey.fever voice @p[tag=!titled,sort=nearest,limit=1]
 execute if data block ~ ~ ~ {front_text:{color:"pink"}} run playsound transposia:journey.drum voice @p[tag=!titled,sort=nearest,limit=1]
 
+#DBG
+execute if data block ~ ~ ~ {front_text:{color:"green"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"text":"     ","color":"white","bold":false,"underlined":false}]
+execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound minecraft:entity.evoker.prepare_attack voice @s
+
 function hopevox:timer/start
 
 tag @p[tag=!titled,sort=nearest,limit=1] add titled
@@ -41,20 +45,3 @@ execute if entity @s[tag=title_iron] run tag @p[tag=!titled_iron,sort=nearest,li
 execute if entity @s[tag=title_gold] run tag @p[tag=!titled_gold,sort=nearest,limit=1] add titled_gold
 execute if entity @s[tag=title_diam] run tag @p[tag=!titled_diam,sort=nearest,limit=1] add titled_diam
 execute if entity @s[tag=title_neth] run tag @p[tag=!titled_neth,sort=nearest,limit=1] add titled_neth
-
-
-#DBG
-#execute if data block ~ ~ ~ {front_text:{color:"green"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"text":"     ","color":"white","bold":false,"underlined":false}]
-#execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound minecraft:entity.evoker.prepare_attack voice @s
-
-
-
-#	TITLE (PINGU)
-#IRON 25
-#title montré à tous ceux qui sont dans la dist min et qui n'ont pas encore eu le title
-#execute as @a[tag=!playTitle] at @s run execute at @e[tag=ironBlock,sort=nearest,distance=..25] run title @a[tag=!playTitle] title [{"text":"     ","color":"white","bold":false,"underlined":true},{"nbt":"Text1","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"Text2","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"Text3","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"Text4","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"text":"     ","color":"white","bold":false,"underlined":true}]
-#donne le tag signifiant que le title a été joué 1x au joueur le plus éloigné (donc celui qui vient d'entrer dans la dist min)
-#BORDEL execute as @a[tag=!playTitle] at @s run execute at @e[tag=ironBlock,sort=nearest,distance=..25] run tag @a[limit=1,sort=nearest] add playTitle
-#remove tag si en dehors de la zone
-#execute as @a[tag=playTitle] at @e[tag=ironBlock,sort=nearest] run tag @a[distance=26..,limit=1,sort=nearest] remove playTitle
-

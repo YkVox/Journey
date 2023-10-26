@@ -1,6 +1,3 @@
-#execute as @a at @s run tellraw @s[gamemode=creative] ["",{"text":" \u0020 Hope's ","italic":true,"underlined":true},{"text":"Dark Souls Titles","bold":true,"italic":true,"underlined":true},{"text":" sucessfully activated \u0020 ","italic":true,"underlined":true}]
-scoreboard objectives add title_timer dummy
-
 #sign id
 scoreboard objectives add sign_id dummy
 

@@ -37,7 +37,7 @@ execute as @a[tag=titled] at @s unless entity @e[tag=hope_title,distance=..25] r
 function hopevox:timer/decrease
 
 
-#DELETE MARKER + SOUND + RESET TAG D'ENTREE DANS ZONE
+#DELETE MARKER
 execute as @e[tag=hope_title] at @s unless block ~ ~ ~ #minecraft:signs run function hopevox:titles/title_delete
 execute as @e[tag=hopeTitle] at @s unless block ~ ~ ~ #minecraft:signs run function hopevox:titles/title_delete
 
