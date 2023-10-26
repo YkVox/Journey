@@ -1,6 +1,6 @@
 
 
-
+##TITLE
 execute if data block ~ ~ ~ {front_text:{color:"white"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.white"},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.white"},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.white"},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.white"},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.white"},{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.white"}]
 execute if data block ~ ~ ~ {front_text:{color:"light_gray"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.light_gray"},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.light_gray"},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.light_gray"},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.light_gray"},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.light_gray"},{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.light_gray"}]
 execute if data block ~ ~ ~ {front_text:{color:"gray"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.gray"},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.gray"},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.gray"},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.gray"},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.gray"},{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.gray"}]
@@ -18,11 +18,7 @@ execute if data block ~ ~ ~ {front_text:{color:"purple"}} run title @p[tag=!titl
 execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.magenta"},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.magenta"},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.magenta"},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.magenta"},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.magenta"},{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.magenta"}]
 execute if data block ~ ~ ~ {front_text:{color:"pink"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.pink"}]
 
-#DBG
-#execute if data block ~ ~ ~ {front_text:{color:"green"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"text":"     ","color":"white","bold":false,"underlined":false}]
-#execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound minecraft:entity.evoker.prepare_attack voice @s
-
-
+##SOUND
 execute if data block ~ ~ ~ {front_text:{color:"white"}} run playsound transposia:journey.strings voice @p[tag=!titled,sort=nearest,limit=1]
 #execute if data block ~ ~ ~ {front_text:{color:"light_gray"} run playsound transposia:journey./ voice @p[tag=!titled,sort=nearest,limit=1]
 execute if data block ~ ~ ~ {front_text:{color:"gray"}} run playsound transposia:journey.klank voice @p[tag=!titled,sort=nearest,limit=1]
@@ -40,7 +36,6 @@ execute if data block ~ ~ ~ {front_text:{color:"purple"}} run playsound transpos
 execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run playsound transposia:journey.fever voice @p[tag=!titled,sort=nearest,limit=1]
 execute if data block ~ ~ ~ {front_text:{color:"pink"}} run playsound transposia:journey.drum voice @p[tag=!titled,sort=nearest,limit=1]
 
-
 function hopevox:timer/start
 
 tag @p[tag=!titled,sort=nearest,limit=1] add titled
@@ -48,6 +43,12 @@ execute if entity @s[tag=ironBlock] run tag @p[tag=!titled_iron,sort=nearest,lim
 execute if entity @s[tag=goldBlock] run tag @p[tag=!titled_gold,sort=nearest,limit=1] add titled_gold
 execute if entity @s[tag=diamondBlock] run tag @p[tag=!titled_diam,sort=nearest,limit=1] add titled_diam
 execute if entity @s[tag=netheriteBlock] run tag @p[tag=!titled_neth,sort=nearest,limit=1] add titled_neth
+
+
+#DBG
+#execute if data block ~ ~ ~ {front_text:{color:"green"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"text":"     ","color":"white","bold":false,"underlined":false}]
+#execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound minecraft:entity.evoker.prepare_attack voice @s
+
 
 
 #	TITLE (PINGU)
