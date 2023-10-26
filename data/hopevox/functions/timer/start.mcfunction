@@ -1,0 +1,14 @@
+execute if score @s sign_id matches 1 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t1 = #cd_value cd_value
+execute if score @s sign_id matches 2 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t2 = #cd_value cd_value
+execute if score @s sign_id matches 3 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t3 = #cd_value cd_value
+execute if score @s sign_id matches 4 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t4 = #cd_value cd_value
+execute if score @s sign_id matches 5 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t5 = #cd_value cd_value
+execute if score @s sign_id matches 6 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t6 = #cd_value cd_value
+execute if score @s sign_id matches 7 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t7 = #cd_value cd_value
+execute if score @s sign_id matches 8 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t8 = #cd_value cd_value
+execute if score @s sign_id matches 9 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t9 = #cd_value cd_value
+execute if score @s sign_id matches 10 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t10 = #cd_value cd_value
+execute if score @s sign_id matches 11 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t11 = #cd_value cd_value
+execute if score @s sign_id matches 12 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t12 = #cd_value cd_value
+execute if score @s sign_id matches 13 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t13 = #cd_value cd_value
+execute if score @s sign_id matches 14 run scoreboard players operation @p[tag=!titled,sort=nearest,limit=1] t_t14 = #cd_value cd_value

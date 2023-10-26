@@ -1,0 +1,21 @@
+#say ok id
+execute if score @s sign_id matches 1 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t1 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 2 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t2 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 3 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t3 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 4 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t4 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 5 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t5 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 6 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t6 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 7 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t7 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 8 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t8 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 9 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t9 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 10 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t10 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 11 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t11 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 12 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t12 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 13 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t13 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 14 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t14 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 15 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t15 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 16 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t16 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 17 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t17 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 18 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t18 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 19 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t19 matches ..0 run function hopevox:check/radius
+execute if score @s sign_id matches 20 run execute if score @p[tag=!titled,sort=nearest,limit=1] t_t20 matches ..0 run function hopevox:check/radius

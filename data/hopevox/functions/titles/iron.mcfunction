@@ -1,12 +1,27 @@
 
+execute if data block ~ ~ ~ {front_text:{color:"white"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"text":"     ","color":"white","bold":false,"underlined":true}]
+execute if data block ~ ~ ~ {front_text:{color:"light_gray"}} run
+execute if data block ~ ~ ~ {front_text:{color:"gray"}} run
+execute if data block ~ ~ ~ {front_text:{color:"black"}} run
+execute if data block ~ ~ ~ {front_text:{color:"brown"}} run
+execute if data block ~ ~ ~ {front_text:{color:"red"}} run
+execute if data block ~ ~ ~ {front_text:{color:"orange"}} run
+execute if data block ~ ~ ~ {front_text:{color:"yellow"}} run
+execute if data block ~ ~ ~ {front_text:{color:"lime"}} run
+execute if data block ~ ~ ~ {front_text:{color:"green"}} run
+execute if data block ~ ~ ~ {front_text:{color:"cyan"}} run
+execute if data block ~ ~ ~ {front_text:{color:"light_blue"}} run
+execute if data block ~ ~ ~ {front_text:{color:"blue"}} run
+execute if data block ~ ~ ~ {front_text:{color:"purple"}} run
+execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run
+execute if data block ~ ~ ~ {front_text:{color:"pink"}} run
 
-title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":true},{"text":"     ","color":"white","bold":false,"underlined":true}]
 execute as @p[tag=!titled,sort=nearest,limit=1] run playsound minecraft:entity.evoker.prepare_summon ambient @s ^ ^ ^15 5 1.17
-scoreboard players set @p[tag=!titled,sort=nearest,limit=1] title_timer 1200
+
+function hopevox:timer/start
+
 tag @p[tag=!titled,sort=nearest,limit=1] add titled
-
-
-
+execute if entity @s[tag=ironBlock] run tag @p[tag=!titled_iron,sort=nearest,limit=1] add titled_iron
 
 
 #	TITLE (PINGU)
