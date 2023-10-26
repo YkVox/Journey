@@ -7,10 +7,10 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",Count:1b}}] at @s i
 execute as @e[type=item,nbt={Item:{id:"minecraft:gold_ingot",Count:1b}}] at @s if block ~ ~ ~ #signs align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[tag=hope_title,sort=nearest,limit=1,distance=..2] run function hopevox:create/gold
 
 ##		DIAMOND
-execute as @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:1b}}] at @s if block ~ ~ ~ #signs align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[tag=hope_title,sort=nearest,limit=1,distance=..2] run function hopevox:create/diamond
+execute as @e[type=item,nbt={Item:{id:"minecraft:diamond",Count:1b}}] at @s if block ~ ~ ~ #signs align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[tag=hope_title,sort=nearest,limit=1,distance=..2] run function hopevox:create/diam
 
 ##		NETHERITE 
-execute as @e[type=item,nbt={Item:{id:"minecraft:netherite_ingot",Count:1b}}] at @s if block ~ ~ ~ #signs align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[tag=hope_title,sort=nearest,limit=1,distance=..2] run function hopevox:create/netherite
+execute as @e[type=item,nbt={Item:{id:"minecraft:netherite_ingot",Count:1b}}] at @s if block ~ ~ ~ #signs align xyz positioned ~0.5 ~0.5 ~0.5 unless entity @e[tag=hope_title,sort=nearest,limit=1,distance=..2] run function hopevox:create/neth
 
 
 ##  TITLE:PINGU

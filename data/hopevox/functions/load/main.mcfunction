@@ -8,7 +8,11 @@ scoreboard objectives add sign_id dummy
 scoreboard objectives add cd_value dummy
 scoreboard players set #cd_value cd_value 1200
 
-#cooldown titres valeur par défaut : 1min (1200) ; pour mod cette durée, entrer "/scoreboard players set #cd_value cd_value [VALEUR]"
+#create title scoreboards
+function hopevox:load/title_sb_create
+
+#default player values
+function hopevox:load/default_values
 
 #message
 execute as @a at @s run tellraw @s [{"text":"Welcome to ","color":"gray","italic":true},{"text":"Journey","color":"gold","bold":true,"italic":false}]
