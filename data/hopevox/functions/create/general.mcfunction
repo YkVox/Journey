@@ -6,7 +6,7 @@ playsound minecraft:block.bell.resonate voice @a ~ ~ ~ 2 2
 data merge block ~ ~ ~ {GlowingText:1b}
 
 ##SET SIGN ID
-execute as @e[tag=hopeTitle,sort=nearest,limit=1] at @s unless score @s sign_id matches -2147483648..2147483647 run function hopevox:create/set_id
+execute as @e[tag=hope_title,sort=nearest,limit=1] at @s unless score @s sign_id matches -2147483648..2147483647 run function hopevox:create/set_id
 
 #DELETE ITEM
 kill @s

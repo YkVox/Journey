@@ -2,6 +2,6 @@
 particle minecraft:wax_off ~ ~ ~ 0 0 0 15 15
 
 #SUMMON MARKER
-summon marker ~ ~ ~ {Tags:["hopeTitle","goldBlock"]}
+summon marker ~ ~ ~ {Tags:["hope_title","title_gold"]}
 
 function hopevox:create/general
