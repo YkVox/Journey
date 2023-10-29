@@ -17,22 +17,22 @@ execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run title @p[tag=!tit
 execute if data block ~ ~ ~ {front_text:{color:"pink"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false,"font":"journey.pink"},{"text":"     ","color":"white","bold":false,"underlined":false,"font":"journey.pink"}]
 
 ##SOUND
-execute if data block ~ ~ ~ {front_text:{color:"white"}} run playsound transposia:journey.strings voice @p[tag=!titled,sort=nearest,limit=1]
-#execute if data block ~ ~ ~ {front_text:{color:"light_gray"} run playsound transposia:journey./ voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"gray"}} run playsound transposia:journey.klank voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"black"}} run playsound transposia:journey.silence voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"brown"}} run playsound transposia:journey.cavalry voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"red"}} run playsound transposia:journey.horn voice @p[tag=!titled,sort=nearest,limit=1]
-#execute if data block ~ ~ ~ {front_text:{color:"orange"}} run playsound transposia:journey./ voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"yellow"}} run playsound transposia:journey.chord voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"lime"}} run playsound transposia:journey.backpipes voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"green"}} run playsound transposia:journey.acorn voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"cyan"}} run playsound transposia:journey.chant voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"light_blue"}} run playsound transposia:journey.vibration voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"blue"}} run playsound transposia:journey.bell voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"purple"}} run playsound transposia:journey.piano voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run playsound transposia:journey.fever voice @p[tag=!titled,sort=nearest,limit=1]
-execute if data block ~ ~ ~ {front_text:{color:"pink"}} run playsound transposia:journey.drum voice @p[tag=!titled,sort=nearest,limit=1]
+execute if data block ~ ~ ~ {front_text:{color:"white"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.strings voice @s ~ ~ ~ 1 1
+#execute if data block ~ ~ ~ {front_text:{color:"light_gray"} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey./ voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"gray"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.klank voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"black"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.silence voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"brown"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.cavalry voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"red"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.horn voice @s ~ ~ ~ 1 1
+#execute if data block ~ ~ ~ {front_text:{color:"orange"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey./ voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"yellow"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.chord voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"lime"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.backpipes voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.acorn voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"cyan"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.chant voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"light_blue"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.vibration voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"blue"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.bell voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"purple"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.piano voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.fever voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"pink"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.drum voice @s ~ ~ ~ 1 1
 
 #DBG
 execute if data block ~ ~ ~ {front_text:{color:"green"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"text":"     ","color":"white","bold":false,"underlined":false}]
