@@ -18,12 +18,12 @@ execute if data block ~ ~ ~ {front_text:{color:"pink"}} run title @p[tag=!titled
 
 ##SOUND
 execute if data block ~ ~ ~ {front_text:{color:"white"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.strings voice @s ~ ~ ~ 1 1
-#execute if data block ~ ~ ~ {front_text:{color:"light_gray"} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey./ voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"light_gray"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.silence voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"gray"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.klank voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"black"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.silence voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"brown"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.cavalry voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"red"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.horn voice @s ~ ~ ~ 1 1
-#execute if data block ~ ~ ~ {front_text:{color:"orange"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey./ voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"orange"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.gold voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"yellow"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.chord voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"lime"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.bagpipes voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.acorn voice @s ~ ~ ~ 1 1
