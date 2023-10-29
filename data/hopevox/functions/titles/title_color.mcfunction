@@ -35,8 +35,8 @@ execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run execute as @p[tag
 execute if data block ~ ~ ~ {front_text:{color:"pink"}} run execute as @p[tag=!titled,tag=!titled_iron,tag=!titled_gold,tag=!titled_diam,tag=!titled_neth,sort=nearest,limit=1] at @s run playsound transposia:journey.drum voice @s ~ ~ ~ 1 1
 
 #DBG
-execute if data block ~ ~ ~ {front_text:{color:"green"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"text":"     ","color":"white","bold":false,"underlined":false}]
-execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound minecraft:entity.evoker.prepare_attack voice @s
+#execute if data block ~ ~ ~ {front_text:{color:"green"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"text":"     ","color":"white","bold":false,"underlined":false}]
+#execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound minecraft:entity.evoker.prepare_attack voice @s
 
 function hopevox:timer/start
 
