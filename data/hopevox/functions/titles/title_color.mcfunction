@@ -25,7 +25,7 @@ execute if data block ~ ~ ~ {front_text:{color:"brown"}} run execute as @p[tag=!
 execute if data block ~ ~ ~ {front_text:{color:"red"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.horn voice @s ~ ~ ~ 1 1
 #execute if data block ~ ~ ~ {front_text:{color:"orange"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey./ voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"yellow"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.chord voice @s ~ ~ ~ 1 1
-execute if data block ~ ~ ~ {front_text:{color:"lime"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.backpipes voice @s ~ ~ ~ 1 1
+execute if data block ~ ~ ~ {front_text:{color:"lime"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.bagpipes voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.acorn voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"cyan"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.chant voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"light_blue"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.vibration voice @s ~ ~ ~ 1 1
