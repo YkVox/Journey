@@ -45,3 +45,4 @@ execute if entity @s[tag=title_iron] run tag @p[tag=!titled_iron,sort=nearest,li
 execute if entity @s[tag=title_gold] run tag @p[tag=!titled_gold,sort=nearest,limit=1] add titled_gold
 execute if entity @s[tag=title_diam] run tag @p[tag=!titled_diam,sort=nearest,limit=1] add titled_diam
 execute if entity @s[tag=title_neth] run tag @p[tag=!titled_neth,sort=nearest,limit=1] add titled_neth
+

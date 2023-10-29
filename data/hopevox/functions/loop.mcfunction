@@ -31,7 +31,9 @@ execute as @a[tag=titled_gold] at @s unless entity @e[tag=title_gold,distance=..
 execute as @a[tag=!titled_iron] at @s run execute as @e[tag=title_iron,distance=..24.99,sort=nearest,limit=1] at @s run function hopevox:check/id
 execute as @a[tag=titled_iron] at @s unless entity @e[tag=title_iron,distance=..25] run tag @s remove titled_iron
 
-execute as @a[tag=titled] at @s unless entity @e[tag=hope_title,distance=..25] run tag @s remove titled
+#execute as @a[tag=titled] at @s unless entity @e[tag=hope_title,distance=..25] run tag @s remove titled
+
+execute as @a[tag=titled] at @s unless entity @s[tag=titled_iron] unless entity @s[tag=titled_gold] unless entity @s[tag=titled_diam] unless entity @s[tag=titled_neth] run tag @s remove titled
 
 ##  PLAYER TIMER DECREASE
 function hopevox:timer/decrease
