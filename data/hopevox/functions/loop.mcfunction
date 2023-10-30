@@ -32,16 +32,19 @@ execute as @a[tag=!titled_iron] at @s run execute as @e[tag=title_iron,distance=
 execute as @a[tag=titled_iron] at @s unless entity @e[tag=title_iron,distance=..25] run tag @s remove titled_iron
 
 #execute as @a[tag=titled] at @s unless entity @e[tag=hope_title,distance=..25] run tag @s remove titled
-
+##      GENERAL TAG REMOVAL
 execute as @a[tag=titled] at @s unless entity @s[tag=titled_iron] unless entity @s[tag=titled_gold] unless entity @s[tag=titled_diam] unless entity @s[tag=titled_neth] run tag @s remove titled
+
+##      ACTIVE SIGN EFFECTS
+execute as @a at @s run execute as @e[tag=hope_title,distance=..15] at @s if predicate hopevox:rng10 run function hopevox:title_particles
 
 ##  PLAYER TIMER DECREASE
 function hopevox:timer/decrease
 
 
-#DELETE MARKER
-execute as @e[tag=hope_title] at @s unless block ~ ~ ~ #minecraft:signs run function hopevox:titles/title_delete
-execute as @e[tag=hopeTitle] at @s unless block ~ ~ ~ #minecraft:signs run function hopevox:titles/title_delete
+##      DELETE SIGN
+execute as @e[tag=hope_title] at @s unless block ~ ~ ~ #minecraft:signs run function hopevox:title_delete
+execute as @e[tag=hopeTitle] at @s unless block ~ ~ ~ #minecraft:signs run function hopevox:title_delete
 
 #DBG
 #function hopevox:dbg_tick
