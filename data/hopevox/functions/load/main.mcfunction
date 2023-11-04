@@ -5,6 +5,9 @@ scoreboard objectives add sign_id dummy
 scoreboard objectives add cd_value dummy
 scoreboard players set #cd_value cd_value 1200
 
+#titles times
+title @a times 0.3s 4.5s 5s
+
 #create title scoreboards
 function hopevox:load/title_sb_create
 
