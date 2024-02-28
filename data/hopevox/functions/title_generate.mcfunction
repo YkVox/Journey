@@ -34,12 +34,10 @@ execute if data block ~ ~ ~ {front_text:{color:"purple"}} run execute as @p[tag=
 execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.fever voice @s ~ ~ ~ 1 1
 execute if data block ~ ~ ~ {front_text:{color:"pink"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.drum voice @s ~ ~ ~ 1 1
 
-#DBG
-#execute if data block ~ ~ ~ {front_text:{color:"green"}} run title @p[tag=!titled,sort=nearest,limit=1] title [{"text":"     ","color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"green","bold":false,"underlined":false},{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"white","bold":false,"underlined":false},{"text":"     ","color":"white","bold":false,"underlined":false}]
-#execute if data block ~ ~ ~ {front_text:{color:"green"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound minecraft:entity.evoker.prepare_attack voice @s
-
+##TIMER
 function hopevox:timer/start
 
+##TAG
 tag @p[tag=!titled,sort=nearest,limit=1] add titled
 execute if entity @s[tag=title_iron] run tag @p[tag=!titled_iron,sort=nearest,limit=1] add titled_iron
 execute if entity @s[tag=title_gold] run tag @p[tag=!titled_gold,sort=nearest,limit=1] add titled_gold

@@ -1,3 +1,5 @@
+schedule function hopevox:loop 1s
+
 ##  TITLE SIGN CREATION
 
 ##		IRON

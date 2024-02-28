@@ -1,9 +1,11 @@
+schedule function hopevox:loop 1s
+
 #sign id
 scoreboard objectives add sign_id dummy
 
 #title cd
 scoreboard objectives add cd_value dummy
-scoreboard players set #cd_value cd_value 1200
+scoreboard players set #cd_value cd_value 60
 
 #titles times
 title @a times 0.3s 4.5s 5s
