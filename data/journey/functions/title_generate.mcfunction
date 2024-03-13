@@ -35,7 +35,7 @@ execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run execute as @p[tag
 execute if data block ~ ~ ~ {front_text:{color:"pink"}} run execute as @p[tag=!titled,sort=nearest,limit=1] at @s run playsound transposia:journey.drum voice @s ~ ~ ~ 1 1
 
 ##TIMER
-function hopevox:timer/start
+function journey:timer/start
 
 ##TAG
 tag @p[tag=!titled,sort=nearest,limit=1] add titled

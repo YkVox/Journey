@@ -1,5 +1,6 @@
 {
     "values": [
-        "hopevox:load/main"
+        "journey:load/main",
+        "journey:loop"
     ]
 }

@@ -8,7 +8,7 @@ data modify block ~ ~ ~ front_text.has_glowing_text set value 1
 data modify block ~ ~ ~ back_text.has_glowing_text set value 1
 
 ##SET SIGN ID
-execute as @e[tag=hope_title,sort=nearest,limit=1] at @s unless score @s sign_id matches -2147483648..2147483647 run function hopevox:create/set_id
+execute as @e[tag=hope_title,sort=nearest,limit=1] at @s unless score @s sign_id matches -2147483648..2147483647 run function journey:create/set_id
 
 #DELETE ITEM
 kill @s

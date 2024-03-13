@@ -1,5 +1,3 @@
-schedule function hopevox:loop 1s
-
 #sign id
 scoreboard objectives add sign_id dummy
 
@@ -11,10 +9,10 @@ scoreboard players set #cd_value cd_value 60
 title @a times 0.3s 4.5s 5s
 
 #create title scoreboards
-function hopevox:load/title_sb_create
+function journey:load/title_sb_create
 
 #default player values
-function hopevox:load/default_values
+function journey:load/default_values
 
 #message
 execute as @a at @s run tellraw @s [{"text":"Welcome to ","color":"gray","italic":true},{"text":"Journey","color":"gold","bold":true,"italic":false}]
