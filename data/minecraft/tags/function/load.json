@@ -1,6 +1,6 @@
 {
     "values": [
-        "journey:load/main",
+        "journey:load",
         "journey:loop"
     ]
 }
