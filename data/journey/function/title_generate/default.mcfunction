@@ -126,6 +126,12 @@ execute if data block ~ ~ ~ {front_text:{color:"pink"}} run title @p[tag=!titled
 {"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#F38BAA","bold":false,"underlined":true},\
 {"text":"     ","color":"#F38BAA","bold":false,"underlined":true}]
 
+
+
+
+
+
+
 ##SOUND
 execute as @p[tag=!titled] at @s run playsound minecraft:entity.evoker.prepare_summon ambient @s ~ ~ ~ 3 0.9
 #execute as @p[tag=!titled] at @s run playsound minecraft:block.beacon.power_select ambient @s ~ ~ ~ 2 0.85

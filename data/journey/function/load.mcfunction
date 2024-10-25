@@ -25,12 +25,11 @@ execute unless data storage minecraft:journey jrn_sign_id run data modify storag
 #default total value
 execute unless score #total jrn_sign_id matches -2147483648..2147483647 run scoreboard players set #total jrn_sign_id 0
 
-#auto create scoreboard + default value avec limite fixée
+##new : scoreboard se créé quand le sign est créé ; voir function create/general (c est l ideal)
+#old : auto create scoreboard + default value avec limite fixée
 #   default setup value
 #scoreboard players set #setup jrn_sign_id 0
 #   run setup
 #function journey:load/macro_title_setup with storage minecraft:journey jrn_sign_id
 #max sign id
 #scoreboard players set #max jrn_sign_id 100
-
-##idéal : scoreboard se créé quand le sign est créé ; voir function create/general
