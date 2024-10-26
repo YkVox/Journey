@@ -25,6 +25,9 @@ execute unless data storage minecraft:journey jrn_sign_id run data modify storag
 #default total value
 execute unless score #total jrn_sign_id matches -2147483648..2147483647 run scoreboard players set #total jrn_sign_id 0
 
+#default title mode 
+execute unless score #mode jrn_sign_id matches -2147483648..2147483647 run scoreboard players set #mode jrn_sign_id 0
+
 ##new : scoreboard se créé quand le sign est créé ; voir function create/general (c est l ideal)
 #old : auto create scoreboard + default value avec limite fixée
 #   default setup value

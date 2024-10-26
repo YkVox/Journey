@@ -1,4 +1,4 @@
-execute if score #debug jrn_sign_id matches 1 run say generate title
+execute if score #debug jrn_sign_id matches 1 run say will generate title 
 
 #macro pour mettre le "font" si transposia title enabled ou non ? bon faut faire pour chaque couleur ...
 ##TITLE

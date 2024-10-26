@@ -1,3 +1,5 @@
+execute if score #debug jrn_sign_id matches 1 run say generated title (default)
+
 execute if data block ~ ~ ~ {front_text:{color:"white"}} run title @p[tag=!titled] title [\
 {"text":"     ","color":"#F9FFFE","bold":false,"underlined":true},\
 {"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#F9FFFE","bold":false,"underlined":true},\
