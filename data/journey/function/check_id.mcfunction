@@ -15,11 +15,11 @@ $execute if score @s jrn_sign_id matches $(check_id) run execute if score @p[tag
 
 
 #anti repeat tag
-$execute if score @s jrn_sign_id matches $(check_id) run execute if score @p[tag=!titled] jrn_title_timer$(check_id) matches ..0 run function journey:title_tag
+$execute if score @s jrn_sign_id matches $(check_id) run execute if score @p[tag=!titled] jrn_title_timer$(check_id) matches ..0 run function journey:add_tag
 
 #si se voit générer title (recoit cd + tag), sort de l'area (perd les tags) puis rerentre alors que cd pas fini
 #cette ligne est nouvelle et fix un des derniers bug majeurs, elle pourrait neanmoins etre combinee a la ligne precedente ; neamoins elle ne fixe ni n empire les soucis liees a la superposition des areas...
-$execute if score @s jrn_sign_id matches $(check_id) run execute if score @p[tag=!titled] jrn_title_timer$(check_id) matches 1.. run function journey:title_tag
+$execute if score @s jrn_sign_id matches $(check_id) run execute if score @p[tag=!titled] jrn_title_timer$(check_id) matches 1.. run function journey:add_tag
 
 
 

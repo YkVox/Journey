@@ -28,6 +28,13 @@ execute unless score #total jrn_sign_id matches -2147483648..2147483647 run scor
 #default title mode 
 execute unless score #mode jrn_sign_id matches -2147483648..2147483647 run scoreboard players set #mode jrn_sign_id 0
 
+
+#au load set default value pour chaque joueur (au lieu de seulement lorsque création sign) pas présents au momnet création sign
+#execute as @e[tag=hope_title] at @s run function journey:default_player_timer_value with entity @s data
+#INTEGRER COMMANDE A LA FONCTION SI NOUV JOUEUR SE CONNECTE 
+
+
+
 ##new : scoreboard se créé quand le sign est créé ; voir function create/general (c est l ideal)
 #old : auto create scoreboard + default value avec limite fixée
 #   default setup value

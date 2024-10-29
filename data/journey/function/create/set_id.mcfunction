@@ -10,13 +10,8 @@ scoreboard players operation #total jrn_sign_id > @e[tag=hope_title] jrn_sign_id
 #update total sign id + storage for next scoreboard
 execute store result storage minecraft:journey jrn_sign_id.id int 1 run scoreboard players add #total jrn_sign_id 1
 
-
 #set sign id
 scoreboard players operation @s jrn_sign_id = #total jrn_sign_id
 
-
-#create scoreboard
-$scoreboard objectives add jrn_title_timer$(id) dummy
-
-#player default value
-$execute as @a at @s unless score @s jrn_title_timer$(id) matches -2147483648..2147483647 run scoreboard players set @s jrn_title_timer$(id) 0
+#create scoreboard : fonction a part car dès fois pas assez rapide sinon (ne créait SB qu'1 fois sur 2) ; macros dont variables sotn update doivent run dans function a part, peuvent pas se MAJ au sein de la ^m function
+function journey:create/sb with storage minecraft:journey jrn_sign_id

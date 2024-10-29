@@ -1,13 +1,8 @@
 schedule function journey:loop 2s
 
-
-#ajouter menu options : avec ou sans ressource pack (couleurs)
-#menu pour paramétrer distance poru chaque matériau
-#dark souls title mode (white underlined)
-
+#menu pour paramétrer distance p chaque matériau?
 
 ##  TITLE SIGN CREATION
-#en faire une loop + lente qui comente par execute as @a if entity item puis execute sur item si différents nbt @s
 execute as @a at @s if entity @n[type=item,distance=..5] run function journey:create/detect
 
 
@@ -46,10 +41,7 @@ execute as @a[tag=titled] at @s \
 
 
 ##  ACTIVE SIGN EFFECTS
-execute as @a at @s run execute as @e[type=marker,tag=hope_title,distance=..15] at @s run function journey:title_particles
+execute as @a at @s run execute as @n[type=marker,tag=hope_title,distance=..15] at @s run function journey:particles
 
 ##  BREAK SIGN
-execute as @e[type=marker,tag=hope_title] at @s unless block ~ ~ ~ #minecraft:signs run function journey:title_delete
-
-#DBG
-#function journey:dbg_tick
+execute as @a at @s run execute as @n[type=marker,tag=hope_title,distance=..50] at @s unless block ~ ~ ~ #minecraft:signs run function journey:delete
