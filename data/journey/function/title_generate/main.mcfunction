@@ -1,8 +1,7 @@
-execute if score #debug jrn_sign_id matches 1 run say will generate title 
+$execute if score #debug jrn_sign_id matches 1 run say will generate title : $(material)
 
-#macro pour mettre le "font" si transposia title enabled ou non ? bon faut faire pour chaque couleur ...
 ##TITLE
 #transposia titles
-execute if score #mode jrn_sign_id matches 1 run function journey:title_generate/transposia
+$execute if score #mode jrn_sign_id matches 1 run function journey:title_generate/transposia {material:$(material)}
 #default titles
-execute if score #mode jrn_sign_id matches 0 run function journey:title_generate/default
+$execute if score #mode jrn_sign_id matches 0 run function journey:title_generate/default {material:$(material)}

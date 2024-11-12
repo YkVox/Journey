@@ -1,3 +1,6 @@
+#set sign id store in sign data for giving player default value on login via macro (si player non présent au moment création panneau, utile lors du load et lors function nouveau player)
+$data modify entity @s data.id set value $(id)
+
 #create scoreboard
 $scoreboard objectives add jrn_title_timer$(id) dummy
 

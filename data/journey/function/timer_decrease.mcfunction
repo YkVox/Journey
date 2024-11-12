@@ -7,7 +7,7 @@ execute store result storage minecraft:journey jrn_sign_id.decrease_id int 1 run
 $scoreboard players remove @a[scores={jrn_title_timer$(decrease_id)=1..}] jrn_title_timer$(decrease_id) 1
 
 #loop until max reached
-execute unless score #decrease_id jrn_sign_id >= #total jrn_sign_id run function journey:timer/decrease with storage minecraft:journey jrn_sign_id
+execute unless score #decrease_id jrn_sign_id >= #total jrn_sign_id run function journey:timer_decrease with storage minecraft:journey jrn_sign_id
 
 #si tout check (max atteint), reset scoreboard (pour pouvoir check à nouveau au prochain passage)
 execute if score #decrease_id jrn_sign_id >= #total jrn_sign_id run scoreboard players set #decrease_id jrn_sign_id 0
