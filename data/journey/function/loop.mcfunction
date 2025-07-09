@@ -1,16 +1,22 @@
 schedule function journey:loop 2s
 
 
-
 #todo : 
 #tag removal par macro ar encore limités à 20 (uqe uninstall ?)
 #recuperer total sign_id, et run macr oavec limite ce total
 #combiner les titled de chaque matériau en un function pour juste @a[tag=titled] et ensuite @s[tag=matériau] pour chaque matériau + 
 #   + function pour suprimer tag
-#combiner active sign effects & break sign detection
 #menu pour paramétrer distance p chaque matériau?
-#fix load auto valeur min pour joueurs, 
-# + fix dossier load
+
+
+#souci : Cd appliqué au joueur le plus proche du panneau lorsqu'un joueur entre dans la zone
+# player A déjà dans zone près du panneau , playerB rentre dans zone, title joué à player B (OK) Cd appliqué à player A (PAS BON) = 
+
+#known issues : 
+#si panneau supprimé puis replacé, ne jouera pas title immédiatemnt car scoreboard cd pas reset automatiquement
+#si nouveau panneau créé dans le rayon d'un autre panneau du même matériau, le check de joueurs aux alentours (check_id) 
+#   peut ne pas se lancer de suite (car joueur déjà dans une zone d'un panneau du même matériau = tag empêche détection du joueur), 
+#   à ce moment la sortir du rayon du nouveau panneau et rentrer dedans déclenchera title
 
 
 ##  TITLE SIGN CREATION

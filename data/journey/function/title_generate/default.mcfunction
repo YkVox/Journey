@@ -1,5 +1,6 @@
 execute if score #debug jrn_sign_id matches 1 run say generated title (default)
 
+##VISUAL
 $execute if data block ~ ~ ~ {front_text:{color:"white"}} run title @p[tag=!$(material)] title [\
 {"text":"     ","color":"#F9FFFE","bold":false,"underlined":true},\
 {"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#F9FFFE","bold":false,"underlined":true},\
@@ -129,11 +130,5 @@ $execute if data block ~ ~ ~ {front_text:{color:"pink"}} run title @p[tag=!$(mat
 {"text":"     ","color":"#F38BAA","bold":false,"underlined":true}]
 
 
-
-
-
-
-
 ##SOUND
 $execute as @p[tag=!$(material)] at @s run playsound minecraft:entity.evoker.prepare_summon ambient @s ~ ~ ~ 3 0.9
-#$execute as @p[tag=!$(material)] at @s run playsound minecraft:block.beacon.power_select ambient @s ~ ~ ~ 2 0.85

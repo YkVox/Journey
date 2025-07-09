@@ -1,8 +1,5 @@
 execute if score #debug jrn_sign_id matches 1 run say sign id & scoreboard set
 
-#default  marker data : check_id (for checking pour activer title) 
-execute if data entity @s data{} run data modify entity @s {data:{}} merge value {data:{check_id:0}}
-
 #set max possible value
 scoreboard players set #total jrn_sign_id 0
 scoreboard players operation #total jrn_sign_id > @e[tag=hope_title] jrn_sign_id
