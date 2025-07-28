@@ -1,101 +1,103 @@
 execute if score #debug jrn_sign_id matches 1 run say generated title (transposia)
+#reset times
+title @a times 0.3s 4.5s 5s
 
 ##VISUAL
 $execute if data block ~ ~ ~ {front_text:{color:"white"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.white"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.white"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.white"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.white"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.white"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.white"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.white"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.white"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"light_gray"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.light_gray"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.light_gray"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.light_gray"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.light_gray"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.light_gray"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.light_gray"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.light_gray"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.light_gray"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"gray"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.gray"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.gray"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.gray"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.gray"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.gray"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.gray"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.gray"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.gray"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"black"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.black"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.black"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.black"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.black"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.black"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.black"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.black"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.black"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"brown"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.brown"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.brown"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.brown"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.brown"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.brown"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.brown"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.brown"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.brown"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"red"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.red"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.red"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.red"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.red"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.red"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.red"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.red"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.red"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"orange"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.orange"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.orange"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.orange"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.orange"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.orange"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.orange"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.orange"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.orange"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"yellow"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.yellow"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.yellow"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.yellow"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.yellow"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.yellow"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.yellow"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.yellow"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.yellow"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"lime"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.lime"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.lime"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.lime"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.lime"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.lime"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.lime"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.lime"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.lime"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"green"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.green"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.green"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.green"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.green"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.green"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.green"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.green"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.green"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"cyan"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.cyan"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.cyan"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.cyan"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.cyan"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.cyan"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.cyan"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.cyan"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.cyan"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"light_blue"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.light_blue"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.light_blue"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.light_blue"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.light_blue"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.light_blue"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.light_blue"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.light_blue"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.light_blue"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"blue"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.blue"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.blue"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.blue"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.blue"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.blue"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.blue"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.blue"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.blue"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"purple"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.purple"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.purple"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.purple"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.purple"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.purple"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.purple"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.purple"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.purple"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"magenta"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.magenta"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.magenta"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.magenta"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.magenta"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.magenta"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.magenta"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.magenta"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.magenta"}]
 
 $execute if data block ~ ~ ~ {front_text:{color:"pink"}} run title @p[tag=!$(material)] title [\
-{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.pink"},\
-{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.pink"},\
-{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.pink"},\
-{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"color":"#4E5C24","bold":false,"underlined":false,"font":"transposia:journey.pink"}]
+{"nbt":"front_text.messages[0]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.pink"},\
+{"nbt":"front_text.messages[1]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.pink"},\
+{"nbt":"front_text.messages[2]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.pink"},\
+{"nbt":"front_text.messages[3]","block":"~ ~ ~","interpret":true,"shadow_color":16777215,"bold":false,"underlined":false,"font":"transposia:journey.pink"}]
 
 
 ##SOUND
